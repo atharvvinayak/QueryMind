@@ -1,0 +1,117 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    Inter,
+    system-ui,
+    "Segoe UI Emoji",
+    "Apple Color Emoji",
+    "Noto Color Emoji",
+    sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* Blob 1 */
+@keyframes float1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(250px, -150px);
+  }
+
+  40% {
+    transform: translate(-220px, 180px);
+  }
+
+  60% {
+    transform: translate(180px, 120px);
+  }
+
+  80% {
+    transform: translate(-150px, -100px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* Blob 2 */
+@keyframes float2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(-280px, 160px);
+  }
+
+  40% {
+    transform: translate(220px, -180px);
+  }
+
+  60% {
+    transform: translate(-180px, 140px);
+  }
+
+  80% {
+    transform: translate(140px, -120px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* Blob 3 */
+@keyframes float3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  20% {
+    transform: translate(-220px, -180px);
+  }
+
+  40% {
+    transform: translate(280px, 200px);
+  }
+
+  60% {
+    transform: translate(-180px, 160px);
+  }
+
+  80% {
+    transform: translate(160px, -140px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.animate-float1 {
+  animation: float1 30s linear infinite;
+}
+
+.animate-float2 {
+  animation: float2 38s linear infinite;
+}
+
+.animate-float3 {
+  animation: float3 34s linear infinite;
+}
